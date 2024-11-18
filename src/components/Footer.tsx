@@ -27,16 +27,16 @@ export default function Footer() {
 	return (
 		<div
 			className={cn(
-				'text-black/50 text-[12px] flex bg-gray-100 border-t-[1px] z-20 w-full duration-300 py-[40px] px-50 gap-[10%]',
+				'text-black/50 text-[12px] flex bg-primary z-20 w-full duration-300 p-100 text-white gap-[10%]',
 			)}
 		>
 			<div>
 				<Link
 					href='/'
-					className='tracking-tighter flex-1 leading-[30px] text-[30px] font-bold text-black/50
+					className='tracking-tighter flex-1 leading-[30px] text-[30px] font-bold text-white/50
                     mb-20 inline-block'
 				>
-					Bodaq
+					TEST LOGO
 				</Link>
 				<div className='w-[400px] '>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
