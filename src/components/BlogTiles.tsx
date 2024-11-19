@@ -10,7 +10,11 @@ export default function BlogTiles({ limit }: { limit?: number }) {
 					// @ts-ignore
 					const blog = blogs[key]
 					return (
-						<Link href={`/blog/${key}`} className='flex flex-col'>
+						<Link
+							key={blog.title}
+							href={`/blog/${key}`}
+							className='flex flex-col'
+						>
 							<div className=' flex-1'>
 								<div
 									style={{

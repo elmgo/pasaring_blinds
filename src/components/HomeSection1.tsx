@@ -32,10 +32,10 @@ export default function HomeSection1() {
 					></div>
 					<h3 className='my-20 text-[40px]'>InnoGrille</h3>
 					<div className='text-[20px] mb-20'>
-						When it comes to your home's safety, InnoGrille offers
-						an unmatched solution. Our invisible grille system is
-						designed to provide a nearly invisible yet incredibly
-						strong protective barrier.
+						When it comes to your home&apos;s safety, InnoGrille
+						offers an unmatched solution. Our invisible grille
+						system is designed to provide a nearly invisible yet
+						incredibly strong protective barrier.
 					</div>
 					<div className='font-bold uppercase'>
 						Discover the Benefits

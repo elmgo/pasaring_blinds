@@ -1,27 +1,7 @@
 'use client'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import cn from 'classnames'
-
-const sections = [
-	{
-		label: 'Home',
-		route: '/',
-	},
-	{
-		label: 'Products',
-		route: '/products',
-	},
-	{
-		label: 'Gallery',
-		route: '/gallery',
-	},
-	{
-		label: 'Contact',
-		route: '/contact',
-	},
-]
 
 export default function Footer() {
 	return (
