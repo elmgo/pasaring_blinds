@@ -23,7 +23,7 @@ const sections = [
 export default function NavBar() {
 	const pathName = usePathname()
 	const [scrollY, setScrollY] = useState<number>(0)
-	const isHome = pathName === '/'
+	const lightNav = pathName === '/blog' || pathName === '/'
 	const atTop = scrollY <= 5
 
 	useEffect(() => {
@@ -34,7 +34,6 @@ export default function NavBar() {
 	}, [])
 
 	function onScroll() {
-		console.log(window.scrollY)
 		setScrollY(window.scrollY)
 	}
 
@@ -44,13 +43,13 @@ export default function NavBar() {
 				'fixed z-20 w-full duration-300 h-80 md:h-100 px-20 md:px-50 lg:px-100 flex items-center gap-[10%]',
 				!atTop &&
 					'bg-primary !h-[70px] text-white py-20 shadow-lg shadow-black/10',
-				isHome && atTop && 'text-white bg-primary/0 border-none',
+				lightNav && atTop && 'text-white bg-primary/0 border-none',
 			)}
 		>
 			<Link
 				href='/'
-				className={`${isHome && atTop && 'block flex-1'} ${
-					isHome &&
+				className={`${lightNav && atTop && 'block flex-1'} ${
+					lightNav &&
 					atTop &&
 					'[text-shadow:_0_5px_15px_rgb(0_0_0_/_20%)]'
 				} w-[300px] duration-300 tracking-tighter flex-1 leading-[30px] text-[26px]`}
@@ -60,7 +59,7 @@ export default function NavBar() {
 						<img
 							src='/assets/logo.png'
 							className={`${
-								pathName === '/' ? 'brightness-0 invert' : ''
+								lightNav ? 'brightness-0 invert' : ''
 							} ${
 								atTop ? 'md:scale-125' : ' brightness-0 invert'
 							} block duration-300 w-70 `}
@@ -68,7 +67,7 @@ export default function NavBar() {
 						<img
 							src='/assets/logotext.png'
 							className={`${
-								pathName === '/' ? 'brightness-0 invert' : ''
+								lightNav ? 'brightness-0 invert' : ''
 							} ${
 								!atTop ? 'opacity-0 transition-y-40' : ''
 							} absolute duration-300 w-70 transition-y-0 mt-[14px]`}
@@ -88,11 +87,11 @@ export default function NavBar() {
 						key={section.label}
 						className={cn(
 							`duration-150 border-b-[1px]  tracking-wider uppercase items-end flex ${
-								pathName === '/'
+								lightNav
 									? 'hover:border-white border-white/0'
 									: 'opacity-100 hover:border-black/50 border-black/0'
 							}`,
-							section.route === pathName && 'opacity-100',
+							section.route === pathName && '!border-white/100',
 						)}
 					>
 						<Link href={section.route}>{section.label}</Link>

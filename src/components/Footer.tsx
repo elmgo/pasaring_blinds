@@ -1,9 +1,16 @@
 'use client'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import cn from 'classnames'
 
 export default function Footer() {
+	const [sent, setSent] = useState<boolean>(false)
+
+	async function onSubmit() {
+		// await fetch('')
+		setSent(true)
+	}
+
 	return (
 		<>
 			<div
@@ -35,44 +42,58 @@ export default function Footer() {
 					</div>
 				</div>
 				<div>
-					<div className='mt-40 md:mt-0 text-lg mb-20 text-white/70'>
-						Get a free consultation today
-					</div>
-					<div className='flex text-right flex-1 gap-20'>
-						<div className='w-1/2'>
-							<input
-								type='text'
-								placeholder='Name'
-								className='mb-20 !border-white/30'
-							/>
-							<textarea
-								placeholder='Address'
-								className='h-100 !border-white/30'
-							/>
-						</div>
-						<div className='w-1/2'>
-							{/* <input
+					{sent ? (
+						<h3 className='text-[30px]'>
+							Thanks for getting in touch. We'll reach out to you
+							as soon as we can.
+						</h3>
+					) : (
+						<>
+							<div className='mt-40 md:mt-0 text-lg mb-20 text-white/70'>
+								Get a free consultation today
+							</div>
+							<div className='flex text-right flex-1 gap-20'>
+								<div className='w-1/2'>
+									<input
+										type='text'
+										placeholder='Name'
+										className='mb-20 !border-white/30'
+									/>
+									<textarea
+										placeholder='Address'
+										className='h-100 !border-white/30'
+									/>
+								</div>
+								<div className='w-1/2'>
+									{/* <input
 								type='text'
 								placeholder='Email'
 								className='mb-20 !border-white/30'
-							/> */}
-							<select className='mb-20  !border-white/30 !text-gray'>
-								<option className='text-primary'>
-									InnoBlinds
-								</option>
-								<option className='text-primary'>
-									InnoGrille
-								</option>
-							</select>
-							<input
-								type='text'
-								placeholder='Mobile bumber'
-								className='mb-20 !border-white/30'
-							/>
-							<button className='button'>Submit</button>
-							{/* <textarea placeholder='Message' className='h-100' /> */}
-						</div>
-					</div>
+								/> */}
+									<select className='mb-20  !border-white/30 !text-gray'>
+										<option className='text-primary'>
+											InnoBlinds
+										</option>
+										<option className='text-primary'>
+											InnoGrille
+										</option>
+									</select>
+									<input
+										type='text'
+										placeholder='Mobile bumber'
+										className='mb-20 !border-white/30'
+									/>
+									<button
+										className='button'
+										onClick={onSubmit}
+									>
+										Submit
+									</button>
+									{/* <textarea placeholder='Message' className='h-100' /> */}
+								</div>
+							</div>
+						</>
+					)}
 				</div>
 			</div>
 			<div className='text-white bg-primaryDark flex items-center content !py-20'>

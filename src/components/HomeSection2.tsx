@@ -40,7 +40,7 @@ export default function HomeSection2() {
 			<img
 				style={{ opacity: 0.03 }}
 				src='/assets/logohalf.png'
-				className='-scale-y-100 md:scale-100 absolute top-0 right-0 md:h-full opacity-5 invert brightness-0'
+				className='-scale-y-100 md:-scale-100 absolute top-0 right-0 md:h-full opacity-5 invert brightness-0'
 			/>
 			<div className='content flex flex-col gap-80 items-center'>
 				<h2 className='text-left text-white'>Why Choose Us</h2>

@@ -5,7 +5,7 @@ export default function BlogPageBlog({ params }: any) {
 	// @ts-ignore
 	const blog = blogs[params.blogId!]
 	return (
-		<div className='animate-fadeUp flex flex-col items-center'>
+		<div className='pt-[160px] animate-fadeUp flex flex-col items-center'>
 			<div className='w-full max-w-[1000px]'>
 				<h1 className='mb-50 w-full max-w-[1000px] leading-tight'>
 					{blog.title}

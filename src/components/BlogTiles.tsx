@@ -20,7 +20,7 @@ export default function BlogTiles({ limit }: { limit?: number }) {
 									style={{
 										backgroundImage: `url(${blog.imageUrl})`,
 									}}
-									className='hover:scale-105 hover:shadow-xl !shadow-black/30 duration-300 aspect-video bg-center bg-cover rounded-lg mb-20'
+									className='hover:scale-105 hover:-translate-y-10 hover:shadow-xl !shadow-black/20 duration-300 aspect-video bg-center bg-cover rounded-lg mb-20'
 								></div>
 								<div className='mb-[24px] text-[20px] font-extralight leading-tight'>
 									{blog.title}
