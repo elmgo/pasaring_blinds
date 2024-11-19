@@ -26,7 +26,7 @@ export default function Parallax({
 	return (
 		<div
 			ref={bgRef}
-			className={`${className} h-screen relative bg-cover bg-center text-white text-3xl`}
+			className={`${className} h-screen relative bg-center bg-[150%] md:bg-center text-white text-3xl`}
 			style={{
 				backgroundImage: `url('${bgUrl}')`,
 			}}

@@ -41,7 +41,7 @@ export default function NavBar() {
 	return (
 		<div
 			className={cn(
-				'fixed z-20 w-full duration-300 h-100 px-100 flex items-center gap-[10%]',
+				'fixed z-20 w-full duration-300 h-80 md:h-100 px-20 md:px-50 lg:px-100 flex items-center gap-[10%]',
 				!atTop &&
 					'bg-primary !h-[70px] text-white py-20 shadow-lg shadow-black/10',
 				isHome && atTop && 'text-white bg-primary/0 border-none',
@@ -62,7 +62,7 @@ export default function NavBar() {
 							className={`${
 								pathName === '/' ? 'brightness-0 invert' : ''
 							} ${
-								atTop ? 'scale-125' : ' brightness-0 invert'
+								atTop ? 'md:scale-125' : ' brightness-0 invert'
 							} block duration-300 w-70 `}
 						/>
 						<img
@@ -78,16 +78,16 @@ export default function NavBar() {
 						src='/assets/logotext.png'
 						className={`${
 							atTop ? 'opacity-0 ' : ''
-						} duration-300 w-[130px] brightness-0 transition-y-0 ml-20 invert`}
+						} hidden md:block duration-300 w-[130px] brightness-0 transition-y-0 ml-20 invert`}
 					/>
 				</div>
 			</Link>
-			<div className='flex gap-40'>
+			<div className='flex gap-[16px] md:gap-40 text-[14px] md:text-[16px]'>
 				{sections.map((section) => (
 					<div
 						key={section.label}
 						className={cn(
-							`text-[16px] duration-150 border-b-[1px]  tracking-wider uppercase items-end flex ${
+							`duration-150 border-b-[1px]  tracking-wider uppercase items-end flex ${
 								pathName === '/'
 									? 'hover:border-white border-white/0'
 									: 'opacity-100 hover:border-black/50 border-black/0'

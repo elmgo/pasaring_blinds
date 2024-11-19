@@ -8,10 +8,10 @@ export default function Footer() {
 		<>
 			<div
 				className={cn(
-					'items-center text-black/50 text-[12px] flex bg-primary z-20 w-full duration-300 p-100 py-50 text-white gap-[10%]',
+					'content items-center text-black/50 text-[12px] md:flex bg-primary z-20 w-full duration-300 text-white gap-[10%]',
 				)}
 			>
-				<div>
+				<div className='w-full md:w-1/3 lg:w-1/2'>
 					<Link
 						href='/'
 						className='tracking-tighter flex-1 leading-[30px] text-[30px] font-bold text-white/50
@@ -35,7 +35,7 @@ export default function Footer() {
 					</div>
 				</div>
 				<div>
-					<div className='text-lg mb-20 text-white/70'>
+					<div className='mt-40 md:mt-0 text-lg mb-20 text-white/70'>
 						Get a free consultation today
 					</div>
 					<div className='flex text-right flex-1 gap-20'>

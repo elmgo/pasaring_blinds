@@ -43,7 +43,7 @@ button[type='submit'] {
 }
 
 .button {
-	@apply duration-200 hover:bg-primary hover:text-white font-semibold rounded-xl uppercase text-[14px] text-primary bg-white px-[46px] py-[12px];
+	@apply duration-200 hover:bg-primary hover:text-white font-semibold rounded-xl uppercase text-[14px] text-primary text-center bg-white px-[30px] md:px-[46px] py-[12px];
 }
 
 .button-reverse {
@@ -60,19 +60,19 @@ button[type='submit'] {
 }
 
 .content {
-	@apply py-[140px] px-100 w-full;
+	@apply py-60 px-20 md:py-[140px] md:px-50 lg:px-100 w-full;
 }
 
 h1 {
-	@apply m-0 font-extralight leading-[50px] block w-full text-[56px];
+	@apply m-0 font-extralight md:leading-[60px] xxl:leading-[90px] block w-full text-[32px] md:text-[56px] xxl:text-[70px];
 }
 
 h2 {
-	@apply m-0 font-extralight text-center block w-full text-[56px];
+	@apply m-0 font-extralight text-center block w-full text-[32px] md:text-[56px] xxl:text-[70px];
 }
 
 h3 {
-	@apply m-0 font-extralight block w-full text-[32px];
+	@apply m-0 font-extralight block w-full text-[28px] md:text-[32px] xl:text-[40px];
 }
 
 input[type='number']::-webkit-outer-spin-button,

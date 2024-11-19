@@ -15,7 +15,7 @@ export default function ContactPage() {
 
 	return (
 		<div
-			className='flex pt-[140px] pb-80 min-h-screen flex-1 flex-col items-center
+			className='content !py-[160px] md:!py-200 flex pt-[140px] pb-80 min-h-screen flex-1 flex-col items-center
 		justify-center'
 		>
 			<div className='animate-fadeUp max-w-[600px] w-full'>

@@ -7,12 +7,12 @@ export default function BlogPageBlog({ params }: any) {
 	return (
 		<div className='animate-fadeUp flex flex-col items-center'>
 			<div className='w-full max-w-[1000px]'>
-				<h1 className='mb-50 w-full max-w-[1000px] leading-[60px]'>
+				<h1 className='mb-50 w-full max-w-[1000px] leading-tight'>
 					{blog.title}
 				</h1>
 				<div
 					style={{ backgroundImage: `url(${blog.imageUrl})` }}
-					className='rounded-lg mb-50 w-full h-[500px] bg-center bg-cover'
+					className='rounded-lg mb-50 w-full h-200 md:h-300 lg:h-[500px] bg-center bg-cover'
 				/>
 				<div
 					className='text-[18px]'

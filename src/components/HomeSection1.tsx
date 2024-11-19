@@ -7,15 +7,15 @@ export default function HomeSection1() {
 				safer & stylish
 			</div>
 
-			<div className='flex w-full mt-100 gap-100'>
-				<div className='w-1/2'>
+			<div className='md:flex w-full mt-40 md:mt-100 gap-100'>
+				<div className='md:w-1/2 mb-60 md:mb-0'>
 					<div
 						className='aspect-video rounded-xl p-20 bg-center bg-cover'
 						style={{ backgroundImage: `url("/assets/hero.jpg")` }}
 					></div>
-					<h3 className='my-20 text-[40px]'>InnoBlinds</h3>
+					<h3 className='my-20'>InnoBlinds</h3>
 					<div className='flex flex-col'>
-						<div className='flex-1 text-[20px] mb-20'>
+						<div className='flex-1 md:text-[20px] mb-20'>
 							Our automatic blinds system integrates seamlessly
 							with modern living spaces, blending technology and
 							convenience.
@@ -25,13 +25,13 @@ export default function HomeSection1() {
 						</div>
 					</div>
 				</div>
-				<div className='w-1/2'>
+				<div className='md:w-1/2'>
 					<div
 						className='aspect-video rounded-xl p-20 bg-center bg-cover'
 						style={{ backgroundImage: `url("/assets/hero.jpg")` }}
 					></div>
-					<h3 className='my-20 text-[40px]'>InnoGrille</h3>
-					<div className='text-[20px] mb-20'>
+					<h3 className='my-20'>InnoGrille</h3>
+					<div className='md:text-[20px] mb-20'>
 						When it comes to your home&apos;s safety, InnoGrille
 						offers an unmatched solution. Our invisible grille
 						system is designed to provide a nearly invisible yet
