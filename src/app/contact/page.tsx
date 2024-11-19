@@ -24,8 +24,8 @@ export default function ContactPage() {
 		>
 			{sent ? (
 				<h3 className=' max-w-[400px] text-center text-[30px]'>
-					Thanks for getting in touch. We'll reach out to you as soon
-					as we can.
+					Thanks for getting in touch. We&apos;ll reach out to you as
+					soon as we can.
 				</h3>
 			) : (
 				<div className='animate-fadeUp max-w-[600px] w-full'>

@@ -44,8 +44,8 @@ export default function Footer() {
 				<div>
 					{sent ? (
 						<h3 className='text-[30px]'>
-							Thanks for getting in touch. We'll reach out to you
-							as soon as we can.
+							Thanks for getting in touch. We&apos;ll reach out to
+							you as soon as we can.
 						</h3>
 					) : (
 						<>
