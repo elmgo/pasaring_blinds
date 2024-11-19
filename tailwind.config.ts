@@ -65,6 +65,7 @@ const config: Config = {
 
 				// admin colors
 				primary: '#561E1D',
+				primaryDark: '#4A1817',
 			},
 			animation: {
 				fadeUp: 'fadeUp 0.7s ease-in-out',

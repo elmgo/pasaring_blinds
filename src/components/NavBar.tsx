@@ -3,19 +3,20 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 import cn from 'classnames'
+import throttle from '@/utils/throttle'
 
 const sections = [
 	{
 		label: 'Home',
-		route: './',
+		route: '/',
 	},
 	{
 		label: 'Blog',
-		route: './products',
+		route: '/blog',
 	},
 	{
 		label: 'Contact',
-		route: './contact',
+		route: '/contact',
 	},
 ]
 
@@ -26,9 +27,10 @@ export default function NavBar() {
 	const atTop = scrollY === 0
 
 	useEffect(() => {
-		console.log('bla')
-		window.addEventListener('scroll', onScroll)
-		return () => window.removeEventListener('scroll', onScroll)
+		const func = throttle(onScroll, 20)
+
+		window.addEventListener('scroll', func)
+		return () => window.removeEventListener('scroll', func)
 	}, [])
 
 	function onScroll() {
@@ -46,23 +48,46 @@ export default function NavBar() {
 			)}
 		>
 			<Link
-				href='./'
+				href='/'
 				className={`${isHome && atTop && 'block flex-1'} ${
 					isHome &&
 					atTop &&
 					'[text-shadow:_0_5px_15px_rgb(0_0_0_/_20%)]'
 				} w-[300px] duration-300 tracking-tighter flex-1 leading-[30px] text-[26px]`}
 			>
-				{/* <img src='/logo.svg' />
-				 */}
-				TEMP LOGO
+				<div className='flex items-center'>
+					<div>
+						<img
+							src='/assets/logo.png'
+							className={`${
+								pathName === '/' ? 'brightness-0 invert' : ''
+							} ${
+								atTop ? 'scale-125' : ' brightness-0 invert'
+							} block duration-300 w-70 `}
+						/>
+						<img
+							src='/assets/logotext.png'
+							className={`${
+								pathName === '/' ? 'brightness-0 invert' : ''
+							} ${
+								!atTop ? 'opacity-0 transition-y-40' : ''
+							} absolute duration-300 w-70 transition-y-0 mt-[14px]`}
+						/>
+					</div>
+					<img
+						src='/assets/logotext.png'
+						className={`${
+							atTop ? 'opacity-0 ' : ''
+						} duration-300 w-[130px] brightness-0 transition-y-0 ml-20 invert`}
+					/>
+				</div>
 			</Link>
 			<div className='flex gap-40'>
 				{sections.map((section) => (
 					<div
 						key={section.label}
 						className={cn(
-							`text-[13px] duration-150 border-b-[1px] font-secondary font-bold tracking-wider uppercase items-end flex ${
+							`text-[16px] duration-150 border-b-[1px]  tracking-wider uppercase items-end flex ${
 								pathName === '/'
 									? 'hover:border-white border-white/0'
 									: 'opacity-100 hover:border-black/50 border-black/0'

@@ -1,26 +1,34 @@
 import DraggableComponent from './Draggable'
 
+const items = [
+	{ image: '/assets/hero.jpg', title: 'Heres demo text' },
+	{ image: '/assets/hero.jpg', title: 'Heres demo text' },
+	{ image: '/assets/hero.jpg', title: 'Heres demo text' },
+	{ image: '/assets/hero.jpg', title: 'Heres demo text' },
+]
+
 export default function HomeSection5() {
 	return (
-		<div className='content flex gap-100 flex-col bg-primary'>
-			<h2 className='text-left text-white'>Case Studies</h2>
+		<div className='content !px-0 !py-50 flex gap-50 flex-col bg-primary text-white'>
+			<h2 className='!px-100 mb-0 text-left text-white'>Case Studies</h2>
 			<DraggableComponent>
-				<div className='min-w-full bg-white'>
-					<div className='inline-block w-[600px]'>
-						<img src='/images/case1.jpg' alt='Mimosa Residences' />
-						<p>Mimosa Residences</p>
-					</div>
-					<div className='inline-block w-[600px]'>
-						<img
-							src='/images/case2.jpg'
-							alt='Ang Mo Kio 4-Room Flat'
-						/>
-						<p>Ang Mo Kio 4-Room Flat</p>
-					</div>
-					<div className='inline-block w-[600px]'>
-						<img src='/images/case3.jpg' alt='9 Namly' />
-						<p>9 Namly</p>
-					</div>
+				<div className='px-100 pointer-events-none select-none noscroll'>
+					{items.map((item, index) => (
+						<>
+							<div
+								className={`${
+									index === items.length - 1 && '!mr-[100px]'
+								} mr-30 inline-block w-600`}
+							>
+								<img
+									className='rounded-lg block mb-20'
+									src={item.image}
+									alt={item.title}
+								/>
+								<h3 className=''>{item.title}</h3>
+							</div>
+						</>
+					))}
 				</div>
 			</DraggableComponent>
 		</div>
