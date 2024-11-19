@@ -24,7 +24,7 @@ export default function NavBar() {
 	const pathName = usePathname()
 	const [scrollY, setScrollY] = useState<number>(0)
 	const isHome = pathName === '/'
-	const atTop = scrollY === 0
+	const atTop = scrollY <= 5
 
 	useEffect(() => {
 		const func = throttle(onScroll, 20)
