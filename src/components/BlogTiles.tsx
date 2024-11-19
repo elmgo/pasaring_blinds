@@ -1,4 +1,4 @@
-import { blogs } from '@/app/blog/[blogId]/page'
+import { blogs } from '@/blogs/blogs'
 import Link from 'next/link'
 
 export default function BlogTiles({ limit }: { limit?: number }) {
