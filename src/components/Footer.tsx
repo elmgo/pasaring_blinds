@@ -46,16 +46,24 @@ export default function Footer() {
 								className='mb-20 !border-white/30'
 							/>
 							<textarea
-								placeholder='Message'
+								placeholder='Address'
 								className='h-100 !border-white/30'
 							/>
 						</div>
 						<div className='w-1/2'>
-							<input
+							{/* <input
 								type='text'
 								placeholder='Email'
 								className='mb-20 !border-white/30'
-							/>
+							/> */}
+							<select className='mb-20  !border-white/30 !text-gray'>
+								<option className='text-primary'>
+									InnoBlinds
+								</option>
+								<option className='text-primary'>
+									InnoGrille
+								</option>
+							</select>
 							<input
 								type='text'
 								placeholder='Mobile bumber'
