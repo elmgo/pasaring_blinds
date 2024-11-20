@@ -1,4 +1,4 @@
-import DraggableComponent from './Draggable'
+import DraggableComponent from '../Draggable'
 
 const items = [
 	{ image: '/assets/hero.jpg', title: 'Heres demo text' },

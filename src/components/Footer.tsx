@@ -6,8 +6,28 @@ import cn from 'classnames'
 export default function Footer() {
 	const [sent, setSent] = useState<boolean>(false)
 
-	async function onSubmit() {
-		// await fetch('')
+	async function handleSubmit(e: any) {
+		e.preventDefault()
+		const obj: any = {}
+
+		for (const field of e.target) {
+			if (field.getAttribute('data-field')) {
+				obj[field.getAttribute('data-field')] = field.value
+			}
+		}
+
+		obj.name = `${obj.firstName} ${obj.lastName}`
+		delete obj.firstName
+		delete obj.lastName
+
+		await fetch('https://innostruct.sg.com/mail.php', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(obj),
+		})
+
 		setSent(true)
 	}
 
@@ -15,7 +35,7 @@ export default function Footer() {
 		<>
 			<div
 				className={cn(
-					'content items-center text-black/50 text-[12px] md:flex bg-primary z-20 w-full duration-300 text-white gap-[10%]',
+					'content items-center !py-50 text-black/50 text-[12px] md:flex bg-primary z-20 w-full duration-300 text-white gap-[10%]',
 				)}
 			>
 				<div className='w-full md:w-1/3 lg:w-1/2'>
@@ -34,9 +54,9 @@ export default function Footer() {
 						/>
 					</Link>
 					<div className='w-[400px] opacity-50 text-[18px]'>
-						46 Jalan Pemimpin
+						5, Ang Mo Kio
 						<br />
-						Singapore 530543
+						Inustrial Park 2A, #02-19, S(567760)
 						<br />
 						+65 1234 5678
 					</div>
@@ -52,46 +72,53 @@ export default function Footer() {
 							<div className='mt-40 md:mt-0 text-lg mb-20 text-white/70'>
 								Get a free consultation today
 							</div>
-							<div className='flex text-right flex-1 gap-20'>
-								<div className='w-1/2'>
-									<input
-										type='text'
-										placeholder='Name'
-										className='mb-20 !border-white/30'
-									/>
-									<textarea
-										placeholder='Address'
-										className='h-100 !border-white/30'
-									/>
-								</div>
-								<div className='w-1/2'>
-									{/* <input
+							<form
+								onSubmit={handleSubmit}
+								className='flex gap-10 flex-col'
+							>
+								<div className='flex text-right flex-1 gap-20'>
+									<div className='w-1/2'>
+										<input
+											type='text'
+											placeholder='Name'
+											className='mb-20 !border-white/30'
+										/>
+										<textarea
+											data-field='address'
+											placeholder='Address'
+											className='h-100 !border-white/30'
+										/>
+									</div>
+									<div className='w-1/2'>
+										{/* <input
 								type='text'
 								placeholder='Email'
 								className='mb-20 !border-white/30'
 								/> */}
-									<select className='mb-20  !border-white/30 !text-gray'>
-										<option className='text-primary'>
-											InnoBlinds
-										</option>
-										<option className='text-primary'>
-											InnoGrille
-										</option>
-									</select>
-									<input
-										type='text'
-										placeholder='Mobile bumber'
-										className='mb-20 !border-white/30'
-									/>
-									<button
-										className='button'
-										onClick={onSubmit}
-									>
-										Submit
-									</button>
-									{/* <textarea placeholder='Message' className='h-100' /> */}
+										<select
+											data-field='productType'
+											className='mb-20  !border-white/30 !text-gray'
+										>
+											<option className='text-primary'>
+												InnoBlinds
+											</option>
+											<option className='text-primary'>
+												InnoGrille
+											</option>
+										</select>
+										<input
+											data-field='phone'
+											type='text'
+											placeholder='Mobile bumber'
+											className='mb-20 !border-white/30'
+										/>
+										<button className='button'>
+											Submit
+										</button>
+										{/* <textarea placeholder='Message' className='h-100' /> */}
+									</div>
 								</div>
-							</div>
+							</form>
 						</>
 					)}
 				</div>

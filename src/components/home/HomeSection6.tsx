@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import BlogTiles from './BlogTiles'
+import BlogTiles from '../BlogTiles'
 
 export default function HomeSection6() {
 	return (

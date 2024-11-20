@@ -23,7 +23,7 @@ const sections = [
 export default function NavBar() {
 	const pathName = usePathname()
 	const [scrollY, setScrollY] = useState<number>(0)
-	const lightNav = pathName === '/blog' || pathName === '/'
+	const darkNav = pathName.includes('/blog/') || pathName.includes('/contact')
 	const atTop = scrollY <= 5
 
 	useEffect(() => {
@@ -43,13 +43,13 @@ export default function NavBar() {
 				'fixed z-20 w-full duration-300 h-80 md:h-100 px-20 md:px-50 lg:px-100 flex items-center gap-[10%]',
 				!atTop &&
 					'bg-primary !h-[70px] text-white py-20 shadow-lg shadow-black/10',
-				lightNav && atTop && 'text-white bg-primary/0 border-none',
+				!darkNav && atTop && 'text-white bg-primary/0 border-none',
 			)}
 		>
 			<Link
 				href='/'
-				className={`${lightNav && atTop && 'block flex-1'} ${
-					lightNav &&
+				className={`${!darkNav && atTop && 'block flex-1'} ${
+					!darkNav &&
 					atTop &&
 					'[text-shadow:_0_5px_15px_rgb(0_0_0_/_20%)]'
 				} w-[300px] duration-300 tracking-tighter flex-1 leading-[30px] text-[26px]`}
@@ -59,7 +59,7 @@ export default function NavBar() {
 						<img
 							src='/assets/logo.png'
 							className={`${
-								lightNav ? 'brightness-0 invert' : ''
+								!darkNav ? 'brightness-0 invert' : ''
 							} ${
 								atTop ? 'md:scale-125' : ' brightness-0 invert'
 							} block duration-300 w-70 `}
@@ -67,7 +67,7 @@ export default function NavBar() {
 						<img
 							src='/assets/logotext.png'
 							className={`${
-								lightNav ? 'brightness-0 invert' : ''
+								!darkNav ? 'brightness-0 invert' : ''
 							} ${
 								!atTop ? 'opacity-0 transition-y-40' : ''
 							} absolute duration-300 w-70 transition-y-0 mt-[14px]`}
@@ -87,7 +87,7 @@ export default function NavBar() {
 						key={section.label}
 						className={cn(
 							`duration-150 border-b-[1px]  tracking-wider uppercase items-end flex ${
-								lightNav
+								!darkNav
 									? 'hover:border-white border-white/0'
 									: 'opacity-100 hover:border-black/50 border-black/0'
 							}`,

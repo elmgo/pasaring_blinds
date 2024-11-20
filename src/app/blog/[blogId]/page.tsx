@@ -15,7 +15,7 @@ export default function BlogPageBlog({ params }: any) {
 					className='rounded-lg mb-50 w-full h-200 md:h-300 lg:h-[500px] bg-center bg-cover'
 				/>
 				<div
-					className='text-[18px]'
+					className='text-[18px] mb-100'
 					dangerouslySetInnerHTML={{
 						__html: blog.content.replace(/\n/g, '<br />'),
 					}}

@@ -4,31 +4,47 @@ export default function Parallax({
 	bgUrl,
 	children,
 	className,
+	speed = 0.17,
+	offset = 0,
+	bgSize,
 }: {
 	bgUrl: string
 	children?: ReactNode
 	className?: string
+	offset?: number
+	speed?: number
+	bgSize?: string | number
 }) {
 	const bgRef = useRef<HTMLDivElement>(null)
 
 	useEffect(() => {
 		const handleScroll = () => {
 			if (!bgRef.current) return
+			const rect = bgRef.current.getBoundingClientRect()
+			const scrollY = rect.top - offset
 			bgRef.current.style.backgroundPositionY = `${
-				window.scrollY * 0.5 - 200
+				scrollY * speed -
+				(bgSize ? bgRef.current.getBoundingClientRect().height : 0) / 2
 			}px`
 		}
-		handleScroll()
+
+		handleScroll() // Run initially to set position
 		window.addEventListener('scroll', handleScroll)
 		return () => window.removeEventListener('scroll', handleScroll)
-	}, [])
+	}, [offset, speed])
 
 	return (
 		<div
 			ref={bgRef}
-			className={`${className} h-screen relative bg-center bg-[150%] md:bg-center text-white text-3xl`}
+			className={`${className} ${bgSize} bg-cover h-screen relative  text-white text-3xl`}
 			style={{
 				backgroundImage: `url('${bgUrl}')`,
+				backgroundPositionX: 'center',
+				// ...(bgSize
+				// 	? {
+				// 			backgroundSize: bgSize,
+				// 	  }
+				// 	: {}),
 			}}
 		>
 			{children}

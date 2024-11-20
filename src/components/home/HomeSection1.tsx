@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function HomeSection1() {
 	return (
 		<div className='content flex flex-col gap-10 items-center'>
@@ -20,9 +22,11 @@ export default function HomeSection1() {
 							with modern living spaces, blending technology and
 							convenience.
 						</div>
-						<div className='font-bold uppercase'>
-							Discover the Benefits
-						</div>
+						<Link href='/innoblinds'>
+							<div className='font-bold uppercase'>
+								Discover the Benefits
+							</div>
+						</Link>
 					</div>
 				</div>
 				<div className='md:w-1/2'>
@@ -37,9 +41,11 @@ export default function HomeSection1() {
 						system is designed to provide a nearly invisible yet
 						incredibly strong protective barrier.
 					</div>
-					<div className='font-bold uppercase'>
-						Discover the Benefits
-					</div>
+					<Link href='/innogrille'>
+						<div className='font-bold uppercase'>
+							Discover the Benefits
+						</div>
+					</Link>
 				</div>
 			</div>
 		</div>
