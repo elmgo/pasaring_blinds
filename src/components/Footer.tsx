@@ -20,7 +20,7 @@ export default function Footer() {
 		delete obj.firstName
 		delete obj.lastName
 
-		await fetch('https://innostruct.sg.com/mail.php', {
+		await fetch('https://innostruct.sg/mail.php', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ export default function Footer() {
 						<br />
 						Inustrial Park 2A, #02-19, S(567760)
 						<br />
-						+65 9618 9383
+						+65 6531 0565
 					</div>
 				</div>
 				<div>
@@ -111,7 +111,7 @@ export default function Footer() {
 										<input
 											data-field='phone'
 											type='text'
-											placeholder='Mobile bumber'
+											placeholder='Mobile number'
 											className='mb-20 !border-white/30'
 										/>
 										<button className='button'>

@@ -5,7 +5,7 @@ export default function HomeSection1() {
 		<div className='content flex flex-col gap-10 items-center'>
 			<h2 className='text-primary'>Seamless Solutions For Every Home</h2>
 			<div className='max-w-500 text-center text-primary text-[20px]'>
-				Intergrated technology with elegance; make youur home smarter,
+				Intergrated technology with elegance; make your home smarter,
 				safer & stylish
 			</div>
 

@@ -7,6 +7,7 @@ export default function ImageText({
 	imageUrl,
 	title,
 	text,
+	eyebrow,
 	ctaTitle,
 	className,
 	ctaLink = '/contact',
@@ -29,7 +30,7 @@ export default function ImageText({
 		return (
 			<div className='lg:w-1/2 h-[300px] md:h-auto overflow-hidden'>
 				<Parallax
-					offset={2000}
+					offset={2150}
 					bgSize={'170%'}
 					speed={0.1}
 					className='w-full !h-400 rounded-xl'
@@ -52,7 +53,7 @@ export default function ImageText({
 		>
 			{!imageToRight && !isMobile && renderImage()}
 			<div className='lg:w-1/2'>
-				<div className='eyebrow'>Eybrow text here</div>
+				{eyebrow && <div className='eyebrow'>{eyebrow}</div>}
 				<h3 className='text-left mb-30 lg:mb-0'>{title}</h3>
 				{windowSize < 1024 && renderImage()}
 				<div className='para mt-20 mb-40'>{text}</div>

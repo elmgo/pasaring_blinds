@@ -18,7 +18,7 @@ export default function ContactPage() {
 		delete obj.firstName
 		delete obj.lastName
 
-		await fetch('https://innostruct.sg.com/mail.php', {
+		await fetch('https://innostruct.sg/mail.php', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',

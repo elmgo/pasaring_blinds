@@ -32,24 +32,27 @@ export default function PageInnoStruct() {
 					</div>
 				</div>
 				<ImageText
+					eyebrow='Innovation Meets Peace of Mind'
 					imageUrl='/images/innogrille/1.jpg'
 					title='Exclusive InnoClip Safety System'
 					text='InnoGrille is the only invisible grill solution that uses the innovative InnoClip System, designed to maintain full tension in all grill wires even if one snaps. Unlike standard invisible grills where one broken wire compromises the entire system, our InnoClip System keeps the other wires tight, ensuring continued protection and a neat appearance. This feature provides 100% security and peace of mind.'
-					ctaTitle='Schedule a consultation'
+					ctaTitle='Experience the InnoClip Advantage'
 				/>
 				<ImageText
+					eyebrow='Unobstructed Views, Uncompromising Protection'
 					className='bg-black/5'
 					imageUrl='/images/innogrille/2.jpg'
 					title='Minimalist Design, Maximum Strength'
 					text='Enjoy unobstructed views and modern aesthetics with InnoGrille’s slim, nearly invisible design. Built from high-grade materials, it offers robust protection without sacrificing style.'
-					ctaTitle='Schedule a consultation'
+					ctaTitle='Discover the Balance of Design and Safety'
 					imageToRight
 				/>
 				<ImageText
+					eyebrow='Tailored Safety for Your Home'
 					imageUrl='/images/innogrille/3.jpg'
 					title='Custom-Fit for Every Space'
 					text='InnoGrille is custom-made to suit any window or balcony, ensuring a seamless fit that enhances the safety and beauty of your home.'
-					ctaTitle='Schedule a consultation'
+					ctaTitle='Find the Perfect Fit Today'
 				/>
 				<div className='relative bg-black/5 w-full'>
 					<img
@@ -69,7 +72,7 @@ export default function PageInnoStruct() {
 							complements the look of your home.
 							<Link href={'/contact'} className='block mt-50'>
 								<button className='button-reverse'>
-									Schedule a consultation
+									Secure Your Home with InnGrille
 									<i className='ml-10 uil uil-angle-right-b' />
 								</button>
 							</Link>

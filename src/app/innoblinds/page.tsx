@@ -32,27 +32,30 @@ export default function PageInnoStruct() {
 					</div>
 				</div>
 				<ImageText
+					eyebrow='Tailored for Every Home'
 					imageUrl='/images/innoblinds/1.jpg'
 					title='Customisable to Any Space'
 					text='Every home is unique, and so are InnoBlinds. Our blinds are custom-made to fit any window size, ensuring a perfect fit that complements your home’s aesthetic.'
-					ctaTitle='Schedule a consultation'
+					ctaTitle='Explore Customisation Options'
 				/>
 				<ImageText
+					eyebrow='Blinds That Think Like You Do'
 					className='bg-black/5'
 					imageUrl='/images/innoblinds/2.jpg'
 					title='Smart Home Integration'
 					text='InnoBlinds seamlessly integrate with your existing smart home systems, allowing you to automate and control them through voice commands or smartphone apps. Convenience has never looked this good.'
-					ctaTitle='Schedule a consultation'
+					ctaTitle='Discover Smart Integration'
 					imageToRight
 				/>
 				<ImageText
+					eyebrow='Strength Meets Elegance'
 					imageUrl='/images/innoblinds/3.jpg'
 					title='Powerful Motor & Robust Design'
 					text='With a high-powered motor and durable build, InnoBlinds
 					deliver a seamless user experience. Effortlessly control
 					your blinds with just a touch, giving you precise control
 					over the light and privacy in your home'
-					ctaTitle='Schedule a consultation'
+					ctaTitle='See the Power in Action'
 				/>
 				<div className='relative bg-black/5 w-full'>
 					<img
@@ -70,7 +73,7 @@ export default function PageInnoStruct() {
 							comfort, and sophistication to your living space.
 							<Link href={'/contact'} className='block mt-50'>
 								<button className='button-reverse'>
-									Schedule a consultation
+									Elevate Your Space Today
 									<i className='ml-10 uil uil-angle-right-b' />
 								</button>
 								{/* <div className='text-[16px] mt-20'>

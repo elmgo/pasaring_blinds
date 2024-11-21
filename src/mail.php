@@ -6,7 +6,7 @@ header("Access-Control-Allow-Headers: Content-Type");
 
 // Define the recipient email address
 $input = json_decode(file_get_contents('php://input'), true);
-$recipientEmail = "jon@jonculiner.com";
+$recipientEmail = "innostruct@gmail.com";
 
 // Check if the form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -44,21 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	// Send the email
 	if (mail($recipientEmail, $subject, $body, implode("\r\n", $headers))) {
-			echo "Message sent successfully.";
-	} else {
-			echo "Failed to send the message.";
-	}
-}
-
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-	$headers = [
-		"From: info@innostruct.sg",
-		"Reply-To: info@innostruct.sg",
-		"Content-Type: text/plain; charset=UTF-8"
-	];
-
-	// Send the email
-	if (mail('jon@jonculiner.com', 'test', 'test', implode("\r\n", $headers))) {
 			echo "Message sent successfully.";
 	} else {
 			echo "Failed to send the message.";
