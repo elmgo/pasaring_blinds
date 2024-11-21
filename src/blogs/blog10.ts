@@ -1,5 +1,5 @@
 const blog10 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/10.jpg',
 	title: 'How Automatic Blinds Can Improve Energy Efficiency in Your Singapore Home',
 	content: `In Singapore’s tropical climate, maintaining a comfortable home environment can be challenging, especially when it comes to managing energy consumption. With the high costs of air conditioning and electricity, homeowners are always looking for smart solutions to make their homes more energy-efficient. One often overlooked method is the use of automatic blinds. Here's how installing automatic blinds can help improve your home’s energy efficiency and reduce your electricity bills.
 

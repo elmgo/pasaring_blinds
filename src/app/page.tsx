@@ -12,6 +12,7 @@ export default function Page() {
 	return (
 		<div className='w-full'>
 			<Hero
+				imageUrl='/assets/hero.jpg'
 				text='Transforming homes with advanced Smart Blinds and
 						Invisible Grills'
 				ctaTitle='Schedule a free consultation'

@@ -1,5 +1,5 @@
 const blog11 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/11.jpg',
 	title: 'How to Choose Between Invisible Grilles and Traditional Grilles for Your Singapore Home',
 	content: `When it comes to home safety, especially for high-rise apartments and homes with children, installing window grilles is a must. However, the choice between invisible grilles and traditional window grilles can be daunting. Here’s a breakdown of the key factors to consider when choosing between these two options for your Singapore home.
 

@@ -1,5 +1,5 @@
 const blog1 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/1.jpg',
 	title: 'How InnoBlinds Enhances Comfort and Privacy in Singaporean Homes',
 	content: `In Singapore, where many residents live in high-rise apartments and HDB flats, ensuring privacy while maximising natural light is a challenge for homeowners. Traditional blinds may often fall short when it comes to balancing aesthetics, functionality, and modern living needs. That’s where InnoBlinds comes in, offering a revolutionary solution that combines comfort, privacy, and convenience, perfectly tailored to the Singaporean lifestyle.
 

@@ -1,9 +1,15 @@
 import Link from 'next/link'
 import Parallax from './Parallax'
 
-export default function Hero({ text, subText, ctaTitle, ctaUrl }: any) {
+export default function Hero({
+	imageUrl,
+	text,
+	subText,
+	ctaTitle,
+	ctaUrl,
+}: any) {
 	return (
-		<Parallax offset={200} bgUrl='/assets/hero3.jpg'>
+		<Parallax bgUrl={imageUrl}>
 			<div className='content bg-fixed relative flex items-end w-scren h-screen bg-center bg-cover'>
 				<div className='absolute bg-black/20 top-0 left-0 w-full h-full'></div>
 				<div className='relative z-10'>

@@ -1,5 +1,5 @@
 const blog16 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/16.jpg',
 	title: 'Why Singaporean Homeowners Are Opting for Smart Blinds in 2024"',
 	content: `In recent years, smart home technology has become a significant trend in Singapore, with smart blinds emerging as a popular choice among homeowners. Offering a seamless blend of convenience, style, and energy efficiency, smart blinds are changing the way people think about window treatments. But why exactly are Singaporean homeowners embracing this technology? Let’s dive into the key reasons driving this shift.
 

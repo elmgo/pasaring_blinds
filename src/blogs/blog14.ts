@@ -1,5 +1,5 @@
 const blog14 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/14.jpg',
 	title: 'Invisible Grilles vs. Traditional Window Grilles: Which is Best for Your Singapore Home?',
 	content: `Choosing the right window grille for your home is crucial, especially in high-rise buildings where safety is a priority. In Singapore, homeowners often find themselves weighing the pros and cons of invisible grilles against traditional window grilles. Both options offer distinct advantages and cater to different needs, but which one is the best for you?
 

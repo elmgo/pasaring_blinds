@@ -53,12 +53,12 @@ export default function Footer() {
 							className={`mt-5 duration-500 w-80 brightness-0 transition-y-0 invert`}
 						/>
 					</Link>
-					<div className='w-[400px] opacity-50 text-[18px]'>
+					<div className='w-full max-w-[400px] opacity-50 text-[18px]'>
 						5, Ang Mo Kio
 						<br />
 						Inustrial Park 2A, #02-19, S(567760)
 						<br />
-						+65 1234 5678
+						+65 9618 9383
 					</div>
 				</div>
 				<div>
@@ -143,7 +143,7 @@ export default function Footer() {
 							className='h-[25px]  hover:opacity-50 duration-200'
 						/>
 					</Link>
-					<Link target='_blank' href=''>
+					<Link target='_blank' href='https://wa.me/+6596189383'>
 						<i className='uil uil-whatsapp  hover:opacity-50 duration-200' />
 					</Link>
 				</div>

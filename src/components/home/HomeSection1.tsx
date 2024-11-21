@@ -13,7 +13,9 @@ export default function HomeSection1() {
 				<div className='md:w-1/2 mb-60 md:mb-0'>
 					<div
 						className='aspect-video rounded-xl p-20 bg-center bg-cover'
-						style={{ backgroundImage: `url("/assets/hero.jpg")` }}
+						style={{
+							backgroundImage: `url("/images/innoblinds/hero.jpg")`,
+						}}
 					></div>
 					<h3 className='my-20'>InnoBlinds</h3>
 					<div className='flex flex-col'>
@@ -32,7 +34,9 @@ export default function HomeSection1() {
 				<div className='md:w-1/2'>
 					<div
 						className='aspect-video rounded-xl p-20 bg-center bg-cover'
-						style={{ backgroundImage: `url("/assets/hero.jpg")` }}
+						style={{
+							backgroundImage: `url("/images/innogrille/hero.jpg")`,
+						}}
 					></div>
 					<h3 className='my-20'>InnoGrille</h3>
 					<div className='md:text-[20px] mb-20'>

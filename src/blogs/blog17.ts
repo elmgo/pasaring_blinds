@@ -1,5 +1,5 @@
 const blog17 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/17.jpg',
 	title: 'Understanding the Mechanism Behind Motorised Blinds: A Look at Innovation and Convenience',
 	content: `Motorised blinds are quickly becoming a must-have for homeowners in Singapore, combining innovation, convenience, and style into one seamless solution. Whether it’s the convenience of remote operation, timer settings for natural light control, or integration with smart home systems, motorised blinds have revolutionised the way we manage our living spaces. But how do these systems work, and why are they the future of window treatments?
 

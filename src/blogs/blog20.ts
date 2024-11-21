@@ -1,5 +1,5 @@
 const blog20 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/20.jpg',
 	title: 'The Role of Smart Blinds in Creating Energy-Efficient Homes',
 	content: `As energy conservation becomes increasingly important in Singapore, homeowners are seeking ways to reduce energy consumption without sacrificing comfort. One innovative solution lies in the use of smart blinds, which offer both convenience and energy efficiency. Smart blinds, such as InnoBlinds, are equipped with automated systems that can be programmed or controlled remotely to manage sunlight and heat, leading to significant energy savings.
 

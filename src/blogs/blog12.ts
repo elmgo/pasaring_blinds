@@ -1,5 +1,5 @@
 const blog12 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/12.jpg',
 	title: 'How Smart Blinds Can Enhance Privacy and Security in Your Home',
 	content: `As smart home technology evolves, homeowners in Singapore are increasingly looking for ways to enhance both privacy and security without sacrificing style or convenience. Smart blinds, such as those offered by InnoBlinds, provide a cutting-edge solution. These automated systems offer more than just an aesthetic upgrade; they provide practical benefits that help keep your home secure and private.
 

@@ -1,5 +1,5 @@
 const blog3 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/3.jpg',
 	title: 'How Invisible Grilles Enhance Home Safety Without Compromising Style in Singapore',
 	content: `Invisible grilles are rapidly becoming a go-to solution for Singaporean homeowners who are seeking the perfect balance between safety and aesthetics. Unlike traditional window grilles, which can look bulky and intrusive, invisible grilles offer a sleek, minimalist design that doesn't compromise on safety. Here's why invisible grilles are an excellent choice for Singapore homes.
 

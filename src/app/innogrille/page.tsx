@@ -8,6 +8,7 @@ export default function PageInnoStruct() {
 	return (
 		<div className='w-full'>
 			<Hero
+				imageUrl='/images/innogrille/hero.jpg'
 				text='InnoGrille: Invisible Protection, Visible Style'
 				ctaTitle='Schedule a free consultation'
 				ctaUrl='/contact'
@@ -31,21 +32,21 @@ export default function PageInnoStruct() {
 					</div>
 				</div>
 				<ImageText
-					imageUrl='/assets/hero.jpg'
+					imageUrl='/images/innogrille/1.jpg'
 					title='Exclusive InnoClip Safety System'
 					text='InnoGrille is the only invisible grill solution that uses the innovative InnoClip System, designed to maintain full tension in all grill wires even if one snaps. Unlike standard invisible grills where one broken wire compromises the entire system, our InnoClip System keeps the other wires tight, ensuring continued protection and a neat appearance. This feature provides 100% security and peace of mind.'
 					ctaTitle='Schedule a consultation'
 				/>
 				<ImageText
 					className='bg-black/5'
-					imageUrl='/assets/hero.jpg'
+					imageUrl='/images/innogrille/2.jpg'
 					title='Minimalist Design, Maximum Strength'
 					text='Enjoy unobstructed views and modern aesthetics with InnoGrille’s slim, nearly invisible design. Built from high-grade materials, it offers robust protection without sacrificing style.'
 					ctaTitle='Schedule a consultation'
 					imageToRight
 				/>
 				<ImageText
-					imageUrl='/assets/hero.jpg'
+					imageUrl='/images/innogrille/3.jpg'
 					title='Custom-Fit for Every Space'
 					text='InnoGrille is custom-made to suit any window or balcony, ensuring a seamless fit that enhances the safety and beauty of your home.'
 					ctaTitle='Schedule a consultation'
@@ -59,7 +60,7 @@ export default function PageInnoStruct() {
 						<h2 className='text-primary'>Why InnoBlinds?</h2>
 						<div className='max-w-600 mx-auto para'>
 							InnoGrille is not just another invisible grill
-							system; it's a leap forward in safety and
+							system; it&apos;s a leap forward in safety and
 							innovation. With our InnoClip System, you can trust
 							that your home remains secure, even under pressure.
 							Our commitment to safety and elegance ensures that

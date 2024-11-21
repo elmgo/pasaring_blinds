@@ -1,5 +1,5 @@
 const blog5 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/5.jpg',
 	title: 'Why Invisible Grilles Are the Best Choice for Singapore Apartments',
 	content: `Living in an apartment in Singapore often means dealing with the challenge of ensuring safety without sacrificing the beautiful views or the openness of your home. This is where invisible grilles come in as the perfect solution for modern homes. Invisible grilles have grown in popularity due to their subtle yet effective approach to home security. Here’s why they’re the best choice for Singapore apartment dwellers.
 

@@ -1,5 +1,5 @@
 const blog9 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/9.jpg',
 	title: 'The Safety Benefits of Invisible Grilles for Families with Children',
 	content: `For families in Singapore, where high-rise living is common, safety is always a top priority, particularly when it comes to young children. Balconies and windows present potential hazards, and ensuring these areas are secure is critical. This is where invisible grilles come in. Offering safety without sacrificing aesthetics, invisible grilles are quickly becoming a popular choice for modern homes in Singapore. Here’s why they are an excellent option for families with children.
 

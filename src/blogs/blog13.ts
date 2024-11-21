@@ -1,5 +1,5 @@
 const blog13 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/13.jpg',
 	title: 'The Role of Invisible Grilles in Child Safety: What Every Parent Should Know',
 	content: `In homes across Singapore, safety is always a top priority, especially for families with young children. One area of concern that often arises is window safety in high-rise apartments and buildings. Traditional window grilles have been a go-to solution, but many find them unsightly. Invisible grilles, like InnoGrille, offer an innovative alternative, combining safety with aesthetic appeal.
 

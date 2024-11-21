@@ -1,5 +1,5 @@
 const blog4 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/4.jpg',
 	title: "The Benefits of Automatic Blinds in Singapore's Tropical Climate",
 	content: `In Singapore, where the climate is warm and humid year-round, home design must focus on both comfort and efficiency. Automatic blinds are becoming a popular solution for homeowners and businesses alike, offering a blend of convenience, energy efficiency, and smart technology integration. Here are the key benefits of incorporating automatic blinds into your Singapore home or office.
 

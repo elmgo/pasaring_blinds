@@ -27,8 +27,9 @@ export default function ImageText({
 
 	function renderImage() {
 		return (
-			<div className='lg:w-1/2'>
+			<div className='lg:w-1/2 h-[300px] md:h-auto overflow-hidden'>
 				<Parallax
+					offset={2000}
 					bgSize={'170%'}
 					speed={0.1}
 					className='w-full !h-400 rounded-xl'

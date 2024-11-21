@@ -1,5 +1,5 @@
 const blog8 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/8.jpg',
 	title: 'How Automatic Blinds are Revolutionising Modern Homes in Singapore',
 	content: `As technology continues to evolve, so does the way we interact with our homes. One of the latest innovations to gain popularity in Singapore is the use of automatic blinds. These high-tech window coverings are not just about convenience; they offer a range of benefits that make them a valuable addition to any home. 
 Here’s how automatic blinds are transforming modern living spaces across the island.

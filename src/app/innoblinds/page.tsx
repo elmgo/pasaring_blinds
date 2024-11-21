@@ -8,6 +8,7 @@ export default function PageInnoStruct() {
 	return (
 		<div className='w-full'>
 			<Hero
+				imageUrl='/images/innoblinds/hero.jpg'
 				text='InnoBlinds: Smart Control, Seamless Style'
 				ctaTitle='Schedule a free consultation'
 				ctaUrl='/contact'
@@ -31,21 +32,21 @@ export default function PageInnoStruct() {
 					</div>
 				</div>
 				<ImageText
-					imageUrl='/assets/hero.jpg'
+					imageUrl='/images/innoblinds/1.jpg'
 					title='Customisable to Any Space'
 					text='Every home is unique, and so are InnoBlinds. Our blinds are custom-made to fit any window size, ensuring a perfect fit that complements your home’s aesthetic.'
 					ctaTitle='Schedule a consultation'
 				/>
 				<ImageText
 					className='bg-black/5'
-					imageUrl='/assets/hero.jpg'
+					imageUrl='/images/innoblinds/2.jpg'
 					title='Smart Home Integration'
 					text='InnoBlinds seamlessly integrate with your existing smart home systems, allowing you to automate and control them through voice commands or smartphone apps. Convenience has never looked this good.'
 					ctaTitle='Schedule a consultation'
 					imageToRight
 				/>
 				<ImageText
-					imageUrl='/assets/hero.jpg'
+					imageUrl='/images/innoblinds/3.jpg'
 					title='Powerful Motor & Robust Design'
 					text='With a high-powered motor and durable build, InnoBlinds
 					deliver a seamless user experience. Effortlessly control

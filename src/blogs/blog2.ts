@@ -1,5 +1,5 @@
 const blog2 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/2.jpg',
 	title: 'Why Smart Blinds are the Future of Home Automation in Singapore',
 	content: `As Singapore continues to embrace the smart home revolution, one product is quickly gaining traction: smart blinds. These motorised, automated window coverings are redefining the way homeowners interact with their spaces, offering a blend of convenience, comfort, and efficiency that is perfect for modern Singaporean living.
 

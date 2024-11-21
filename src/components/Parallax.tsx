@@ -4,7 +4,7 @@ export default function Parallax({
 	bgUrl,
 	children,
 	className,
-	speed = 0.17,
+	speed = 0.2,
 	offset = 0,
 	bgSize,
 }: {
@@ -23,8 +23,11 @@ export default function Parallax({
 			const rect = bgRef.current.getBoundingClientRect()
 			const scrollY = rect.top - offset
 			bgRef.current.style.backgroundPositionY = `${
-				scrollY * speed -
-				(bgSize ? bgRef.current.getBoundingClientRect().height : 0) / 2
+				scrollY * speed +
+				(bgSize
+					? bgRef.current.getBoundingClientRect().height / 2
+					: 0) /
+					2
 			}px`
 		}
 

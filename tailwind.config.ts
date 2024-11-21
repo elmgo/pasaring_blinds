@@ -68,6 +68,7 @@ const config: Config = {
 				primaryDark: '#4A1817',
 			},
 			animation: {
+				fadeUpSmall: 'fadeUpSmall 0.7s ease-in-out',
 				fadeUp: 'fadeUp 0.7s ease-in-out',
 				fadeDown: 'fadeDown 0.7s ease-in-out',
 				fadeIn: 'fadeIn 1s ease-in-out',
@@ -76,6 +77,16 @@ const config: Config = {
 				fadeUp: {
 					'0%': {
 						transform: 'translateY(10px)',
+						opacity: '0',
+					},
+					'50%': {
+						transform: 'translateY(0)',
+						opacity: '1',
+					},
+				},
+				fadeUpSmall: {
+					'0%': {
+						transform: 'translateY(5px)',
 						opacity: '0',
 					},
 					'50%': {

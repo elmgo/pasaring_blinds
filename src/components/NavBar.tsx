@@ -1,14 +1,18 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import React, { useEffect, useState } from 'react'
+import React, { ReactNode, useEffect, useState } from 'react'
 import cn from 'classnames'
 import throttle from '@/utils/throttle'
+import isMobile from 'is-mobile'
 
 const sections = [
 	{
 		label: 'Home',
 		route: '/',
+	},
+	{
+		label: 'Products',
 	},
 	{
 		label: 'Blog',
@@ -40,7 +44,7 @@ export default function NavBar() {
 	return (
 		<div
 			className={cn(
-				'fixed z-20 w-full duration-300 h-80 md:h-100 px-20 md:px-50 lg:px-100 flex items-center gap-[10%]',
+				'fixed z-20 w-full duration-300 h-80 md:h-100 px-20 md:px-50 lg:px-100 flex items-center',
 				!atTop &&
 					'bg-primary !h-[70px] text-white py-20 shadow-lg shadow-black/10',
 				!darkNav && atTop && 'text-white bg-primary/0 border-none',
@@ -52,7 +56,7 @@ export default function NavBar() {
 					!darkNav &&
 					atTop &&
 					'[text-shadow:_0_5px_15px_rgb(0_0_0_/_20%)]'
-				} w-[300px] duration-300 tracking-tighter flex-1 leading-[30px] text-[26px]`}
+				} md:w-[300px] md:flex-1 duration-300 tracking-tighter flex-1 leading-[30px] text-[26px]`}
 			>
 				<div className='flex items-center'>
 					<div>
@@ -82,22 +86,67 @@ export default function NavBar() {
 				</div>
 			</Link>
 			<div className='flex gap-[16px] md:gap-40 text-[14px] md:text-[16px]'>
-				{sections.map((section) => (
-					<div
-						key={section.label}
-						className={cn(
-							`duration-150 border-b-[1px]  tracking-wider uppercase items-end flex ${
-								!darkNav
-									? 'hover:border-white border-white/0'
-									: 'opacity-100 hover:border-black/50 border-black/0'
-							}`,
-							section.route === pathName && '!border-white/100',
-						)}
-					>
-						<Link href={section.route}>{section.label}</Link>
-					</div>
-				))}
+				{sections.map((section, index) => {
+					if (isMobile() && index === 0) {
+						return null
+					}
+
+					return (
+						<div
+							key={section.label}
+							className={cn(
+								`duration-150 border-b-[1px]  tracking-wider uppercase items-end flex ${
+									!darkNav
+										? 'hover:border-white border-white/0'
+										: 'opacity-100 hover:border-black/50 border-black/0'
+								}`,
+								section.route === pathName &&
+									'!border-white/100',
+							)}
+						>
+							{section.route && (
+								<Link href={section.route}>
+									{section.label}
+								</Link>
+							)}
+							{!section.route && (
+								<Dropdown>{section.label}</Dropdown>
+							)}
+						</div>
+					)
+				})}
 			</div>
+		</div>
+	)
+}
+
+function Dropdown({ children }: { children: ReactNode }) {
+	const [show, setShow] = useState(false)
+	return (
+		<div
+			className='cursor-pointer relative'
+			onMouseOver={() => setShow(true)}
+			onMouseOut={() => setShow(false)}
+		>
+			{children}
+			{show && (
+				<div className='capitalize absolute pt-20'>
+					<div className='-ml-[60px] overflow-hidden bg-white text-primary w-200 rounded-xl shadow-xl shadow-black/10 animate-fadeUpSmall'>
+						<Link
+							href='/innoblinds'
+							className='block px-20 py-[14px] hover:bg-black/5'
+						>
+							InnoBlinds
+						</Link>
+						<Link
+							href='/innogrille'
+							className='block px-20 py-[14px] hover:bg-black/5'
+						>
+							InnoGrille
+						</Link>
+					</div>
+				</div>
+			)}
 		</div>
 	)
 }

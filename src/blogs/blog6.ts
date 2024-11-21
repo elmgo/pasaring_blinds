@@ -1,5 +1,5 @@
 const blog6 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/6.jpg',
 	title: 'How Automatic Blinds Can Increase the Value of Your Home in Singapore',
 	content: `In Singapore’s competitive property market, every homeowner is looking for ways to enhance the value of their property. One often overlooked but highly effective method is the installation of automatic blinds. More than just a functional addition, automatic blinds can transform the aesthetics and convenience of a home, appealing to potential buyers and renters alike. Here’s how automatic blinds can significantly increase the value of your home in Singapore.
 

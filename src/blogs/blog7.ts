@@ -1,5 +1,5 @@
 const blog7 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/7.jpg',
 	title: 'The Ultimate Guide to Choosing the Best Invisible Grilles for Singapore Homes',
 	content: `In Singapore, safety is a top priority, especially for families with children or pets living in high-rise apartments. Traditional grilles, while functional, can detract from the overall aesthetics of a home. Invisible grilles, on the other hand, offer the perfect balance between safety and style, becoming an increasingly popular choice among Singapore homeowners. If you’re considering installing invisible grilles, here’s what you need to know to make the best decision.
 

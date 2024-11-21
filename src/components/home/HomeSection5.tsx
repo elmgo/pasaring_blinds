@@ -1,10 +1,27 @@
 import DraggableComponent from '../Draggable'
 
 const items = [
-	{ image: '/assets/hero.jpg', title: 'Heres demo text' },
-	{ image: '/assets/hero.jpg', title: 'Heres demo text' },
-	{ image: '/assets/hero.jpg', title: 'Heres demo text' },
-	{ image: '/assets/hero.jpg', title: 'Heres demo text' },
+	{
+		image: '/images/case_studies/Arc at Tampines.jpeg',
+		title: 'Arc at Tampines',
+	},
+	{
+		image: '/images/case_studies/Braddel Heights.jpeg',
+		title: 'Braddel Heights',
+	},
+	{
+		image: '/images/case_studies/Marina Bay Suites.jpeg',
+		title: 'Marina Bay Suites',
+	},
+	{
+		image: '/images/case_studies/Regency Suites.jpeg',
+		title: 'Regency Suites',
+	},
+	{
+		image: '/images/case_studies/The Peak Toa Payoh.jpeg',
+		title: 'The Peak, Toa Payoh',
+	},
+	{ image: '/images/case_studies/Yishun HDB.jpeg', title: 'Yishun HDB' },
 ]
 
 export default function HomeSection5() {
@@ -23,11 +40,17 @@ export default function HomeSection5() {
 									'md:!mr-50 lg:!mr-100'
 								} mr-30 inline-block w-300 md:w-600`}
 							>
-								<img
+								<div
+									style={{
+										backgroundImage: `url('${item.image}')`,
+									}}
+									className='bg-cover rounded-xl aspect-video w-full'
+								></div>
+								{/* <img
 									className='rounded-lg block mb-20'
 									src={item.image}
 									alt={item.title}
-								/>
+								/> */}
 								<h3 className=''>{item.title}</h3>
 							</div>
 						</>

@@ -1,5 +1,5 @@
 const blog15 = {
-	imageUrl: '/assets/hero.jpg',
+	imageUrl: '/images/blog/15.jpg',
 	title: 'How to Maintain Your Invisible Grilles in Singapore’s Humid Climate',
 	content: `Invisible grilles have become a popular safety solution for Singapore homes, offering a sleek, modern design while ensuring security. However, with Singapore’s humid and tropical climate, it’s important to know how to maintain these grilles to keep them functioning optimally and looking their best. Proper maintenance not only enhances the lifespan of the invisible grilles but also ensures their safety features remain intact.
 
