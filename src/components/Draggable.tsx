@@ -1,3 +1,4 @@
+'use client'
 import React, { ReactNode, useRef, useState, useEffect } from 'react'
 
 const Draggable = ({ children }: { children: ReactNode }) => {

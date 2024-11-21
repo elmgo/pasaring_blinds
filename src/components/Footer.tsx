@@ -45,10 +45,12 @@ export default function Footer() {
 					mb-20 inline-block'
 					>
 						<img
+							alt='logo'
 							src='/assets/logo.png'
 							className='block w-80 brightness-0 invert'
 						/>
 						<img
+							alt='logotext'
 							src='/assets/logotext.png'
 							className={`mt-5 duration-500 w-80 brightness-0 transition-y-0 invert`}
 						/>
@@ -139,6 +141,7 @@ export default function Footer() {
 						href='https://www.tiktok.com/@innostruct.sg?is_from_webapp=1&sender_device=pc'
 					>
 						<img
+							alt=''
 							src='/assets/tiktok.svg'
 							className='h-[25px]  hover:opacity-50 duration-200'
 						/>

@@ -61,6 +61,7 @@ export default function NavBar() {
 				<div className='flex items-center'>
 					<div>
 						<img
+							alt='logo'
 							src='/assets/logo.png'
 							className={`${
 								!darkNav ? 'brightness-0 invert' : ''
@@ -69,6 +70,7 @@ export default function NavBar() {
 							} block duration-300 w-70 `}
 						/>
 						<img
+							alt='logotext'
 							src='/assets/logotext.png'
 							className={`${
 								!darkNav ? 'brightness-0 invert' : ''
@@ -78,6 +80,7 @@ export default function NavBar() {
 						/>
 					</div>
 					<img
+						alt='logotext'
 						src='/assets/logotext.png'
 						className={`${
 							atTop ? 'opacity-0 ' : ''

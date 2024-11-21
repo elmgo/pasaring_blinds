@@ -1,4 +1,3 @@
-'use client'
 import Hero from '@/components/Hero'
 import HomeSection1 from '@/components/home/HomeSection1'
 import HomeSection2 from '@/components/home/HomeSection2'

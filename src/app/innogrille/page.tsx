@@ -1,4 +1,3 @@
-'use client'
 import Hero from '@/components/Hero'
 import ImageText from '@/components/ImageText'
 import Link from 'next/link'
@@ -17,6 +16,7 @@ export default function PageInnoStruct() {
 				<div className='relative w-full'>
 					<img
 						src='/assets/logohalf.png'
+						alt=''
 						className='-scale-100 absolute opacity-5 bottom-0 md:bottom-auto md:top-0 right-0 md:h-full'
 					/>
 					<div className='content flex flex-col items-center !pb-0'>
@@ -54,6 +54,7 @@ export default function PageInnoStruct() {
 				<div className='relative bg-black/5 w-full'>
 					<img
 						src='/assets/logohalf.png'
+						alt=''
 						className='absolute bottom-0 md:bottom-auto md:top-0 left-0 md:h-full opacity-5'
 					/>
 					<div className='content !py-100 flex gap-30 text-center flex-col  relative'>

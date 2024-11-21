@@ -3,6 +3,7 @@ export default function HomeSection4() {
 		<div className='relative bg-black/5'>
 			<img
 				src='/assets/logohalf.png'
+				alt=''
 				className='absolute bottom-0 md:bottom-auto md:top-0 left-0 md:h-full opacity-5'
 			/>
 			<div className='content  flex gap-50 flex-col  relative'>
