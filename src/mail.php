@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	";
 
 	$headers = [
-			"From: innostruct@gmail.com",
+			"From: phtan6661@gmail.com",
 			"Reply-To: $email",
 			"Content-Type: text/plain; charset=UTF-8"
 	];

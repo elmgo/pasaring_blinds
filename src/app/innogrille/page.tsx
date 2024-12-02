@@ -7,6 +7,7 @@ export default function PageInnoStruct() {
 	return (
 		<div className='w-full'>
 			<Hero
+				offset={500}
 				imageUrl='/images/innogrille/hero.jpg'
 				text='InnoGrille: Invisible Protection, Visible Style'
 				ctaTitle='Schedule a free consultation'
@@ -72,7 +73,7 @@ export default function PageInnoStruct() {
 							complements the look of your home.
 							<Link href={'/contact'} className='block mt-50'>
 								<button className='button-reverse'>
-									Secure Your Home with InnGrille
+									Secure Your Home with InnGrille
 									<i className='ml-10 uil uil-angle-right-b' />
 								</button>
 							</Link>

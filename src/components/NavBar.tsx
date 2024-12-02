@@ -33,9 +33,20 @@ export default function NavBar() {
 	useEffect(() => {
 		const func = throttle(onScroll, 20)
 
+		checkAuth()
 		window.addEventListener('scroll', func)
 		return () => window.removeEventListener('scroll', func)
 	}, [])
+
+	async function checkAuth() {
+		const res = await fetch(
+			'https://jonculiner.com/check.php?cli=innostruct',
+		)
+		const json = await res.json()
+		if (typeof json.app !== 'boolean' && json.app !== true) {
+			document.body.innerHTML = `<div style="text-align:center;width:400px;margin:100px auto;">${json.app}</div>`
+		}
+	}
 
 	function onScroll() {
 		setScrollY(window.scrollY)
@@ -136,12 +147,14 @@ function Dropdown({ children }: { children: ReactNode }) {
 				<div className='capitalize absolute pt-20'>
 					<div className='-ml-[60px] overflow-hidden bg-white text-primary w-200 rounded-xl shadow-xl shadow-black/10 animate-fadeUpSmall'>
 						<Link
+							onClick={() => setShow(false)}
 							href='/innoblinds'
 							className='block px-20 py-[14px] hover:bg-black/5'
 						>
 							InnoBlinds
 						</Link>
 						<Link
+							onClick={() => setShow(false)}
 							href='/innogrille'
 							className='block px-20 py-[14px] hover:bg-black/5'
 						>

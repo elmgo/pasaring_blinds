@@ -44,11 +44,11 @@ export default function Parallax({
 			style={{
 				backgroundImage: `url('${bgUrl}')`,
 				backgroundPositionX: 'center',
-				// ...(bgSize
-				// 	? {
-				// 			backgroundSize: bgSize,
-				// 	  }
-				// 	: {}),
+				...(bgSize
+					? {
+							backgroundSize: bgSize,
+					  }
+					: {}),
 			}}
 		>
 			{children}

@@ -13,7 +13,7 @@ export default function Hero({
 			<div className='content bg-fixed relative flex items-end w-scren h-screen bg-center bg-cover'>
 				<div className='absolute bg-black/20 top-0 left-0 w-full h-full'></div>
 				<div className='relative z-10'>
-					<h1 className='max-w-[500px] xl:max-w-[800px] text-white font-light'>
+					<h1 style={{ textShadow: '0 0 20px rgba(0,0,0,0.3)'}} className='max-w-[500px] xl:max-w-[800px] text-white font-light'>
 						{text}
 					</h1>
 					{subText && (

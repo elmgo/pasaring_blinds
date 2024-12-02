@@ -59,6 +59,9 @@ const config: Config = {
 				'500': '500px',
 				'600': '600px',
 			},
+			textShadow: {
+				hero: '0px 0px 30px rgba(0, 0, 0, 0.15)'
+			},
 			colors: {
 				transparent: 'transparent',
 				current: 'currentColor',
